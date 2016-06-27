@@ -53,6 +53,10 @@ public class FrameOut extends JPanel {
         for (int y = 0; y < h; y += h / 10) {
             gc.drawLine(0, y, w, y);
         }
+        gc.setColor(Color.RED);
+        gc.drawString("Red = .", 5, 15);
+        gc.setColor(Color.BLUE);
+        gc.drawString("Blue = -", 5, 25);
 
         g2d.setStroke(new BasicStroke(2.5f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
         // breedte van de lijnstukken, afgeronde eindpunten
